@@ -26,6 +26,23 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  .board-row {
+    @apply flex
+  }
+
+  .square {
+    @apply flex justify-center items-center py-9 px-9 text-4xl border-gray-50 border-2 w-10 h-10
+  }
+
+  .status {
+    @apply flex w-1/6 py-3 pr-2 justify-center text-xl
+  }
+  /* .board-row {
+    @apply align-top
+  } */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
